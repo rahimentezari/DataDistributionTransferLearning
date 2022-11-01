@@ -63,5 +63,10 @@ source ~/.bashrc
 
 > Test your Environment: gcloud auth list
 13. [Follow these steps to get a JSON file for credentials](https://cloud.google.com/iam/docs/creating-managing-service-account-keys#iam-service-account-keys-create-console)
+14. Move the json file to a path
+15. Add the following to the end of “~/.bashrc”:
+export GOOGLE_APPLICATION_CREDENTIALS=path to the JSON file
+16. source ~/.bashrc
 
+Then you can either run caliban [locally](https://caliban.readthedocs.io/en/stable/cli/caliban_run.html) or on the [cloud using GCP Training jobs](https://caliban.readthedocs.io/en/stable/cli/caliban_cloud.html)
 

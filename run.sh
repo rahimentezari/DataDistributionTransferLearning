@@ -196,43 +196,6 @@ caliban cloud --name finegrained_hyper --xgroup finegrained_hyper --experiment_c
 #python  src/training/main.py     --save-frequency 2     --zeroshot-frequency 5     --report-to wandb,tensorboard   --train-data="/data/yfcc-tmp/yfcc/chunks_merged_1e3/shard_{00000..00500}.tar"  --val-data="/data/yfcc-tmp/yfcc/chunks_merged_1e3/shard_{14720..14729}.tar"    --imagenet-val=/data/yfcc-tmp/data/imagenet/val    --warmup 5000     --batch-size=1024 --lr=1e-3     --wd=0.1     --epochs=32     --workers=8 --dist-url tcp://localhost:10034
 
 
-
-
-
-
-
-####### gsutil co
-#gsutil -m cp -R gs://clip_uw_cp/pretraining/CLIP_RN50_YFCC_15m/DS/CIFAR100/scratch_shots_1 gs://clip_uw_cp/pretraining/CLIP_RN50_YFCC_15m/DS/CIFAR100/shots_1
-#gsutil -m cp -R gs://clip_uw_cp/pretraining/CLIP_RN50_YFCC_15m/DS/CIFAR100/scratch_shots_5 gs://clip_uw_cp/pretraining/CLIP_RN50_YFCC_15m/DS/CIFAR100/shots_5
-#gsutil -m cp -R gs://clip_uw_cp/pretraining/CLIP_RN50_YFCC_15m/DS/CIFAR100/scratch_shots_10 gs://clip_uw_cp/pretraining/CLIP_RN50_YFCC_15m/DS/CIFAR100/shots_10
-#gsutil -m cp -R gs://clip_uw_cp/pretraining/CLIP_RN50_YFCC_15m/DS/CIFAR100/scratch_shots_20 gs://clip_uw_cp/pretraining/CLIP_RN50_YFCC_15m/DS/CIFAR100/shots_20
-#gsutil -m cp -R gs://clip_uw_cp/pretraining/CLIP_RN50_YFCC_15m/DS/CIFAR100/scratch_shots_None gs://clip_uw_cp/pretraining/CLIP_RN50_YFCC_15m/DS/CIFAR100/shots_None
-
-
-#gsutil -m cp -R gs://clip_uw_cp/pretraining/CLIP_RN50_YFCC_15m/DS/DTD/scratch_shots_1 gs://clip_uw_cp/pretraining/CLIP_RN50_YFCC_15m/DS/DTD/shots_1
-#gsutil -m cp -R gs://clip_uw_cp/pretraining/CLIP_RN50_YFCC_15m/DS/DTD/scratch_shots_5 gs://clip_uw_cp/pretraining/CLIP_RN50_YFCC_15m/DS/DTD/shots_5
-#gsutil -m cp -R gs://clip_uw_cp/pretraining/CLIP_RN50_YFCC_15m/DS/DTD/scratch_shots_10 gs://clip_uw_cp/pretraining/CLIP_RN50_YFCC_15m/DS/DTD/shots_10
-#gsutil -m cp -R gs://clip_uw_cp/pretraining/CLIP_RN50_YFCC_15m/DS/DTD/scratch_shots_20 gs://clip_uw_cp/pretraining/CLIP_RN50_YFCC_15m/DS/DTD/shots_20
-#gsutil -m cp -R gs://clip_uw_cp/pretraining/CLIP_RN50_YFCC_15m/DS/DTD/scratch_shots_None gs://clip_uw_cp/pretraining/CLIP_RN50_YFCC_15m/DS/DTD/shots_None
-
-
-#gsutil -m cp -R gs://clip_uw_cp/pretraining/CLIP_RN50_LAION_15m/DS/CIFAR100/scratch_shots_1 gs://clip_uw_cp/pretraining/CLIP_RN50_LAION_15m/DS/CIFAR100/shots_1
-#gsutil -m cp -R gs://clip_uw_cp/pretraining/CLIP_RN50_LAION_15m/DS/CIFAR100/scratch_shots_5 gs://clip_uw_cp/pretraining/CLIP_RN50_LAION_15m/DS/CIFAR100/shots_5
-#gsutil -m cp -R gs://clip_uw_cp/pretraining/CLIP_RN50_LAION_15m/DS/CIFAR100/scratch_shots_10 gs://clip_uw_cp/pretraining/CLIP_RN50_LAION_15m/DS/CIFAR100/shots_10
-#gsutil -m cp -R gs://clip_uw_cp/pretraining/CLIP_RN50_LAION_15m/DS/CIFAR100/scratch_shots_20 gs://clip_uw_cp/pretraining/CLIP_RN50_LAION_15m/DS/CIFAR100/shots_20
-#gsutil -m cp -R gs://clip_uw_cp/pretraining/CLIP_RN50_LAION_15m/DS/CIFAR100/scratch_shots_None gs://clip_uw_cp/pretraining/CLIP_RN50_LAION_15m/DS/CIFAR100/shots_None
-#
-#
-#gsutil -m cp -R gs://clip_uw_cp/pretraining/CLIP_RN50_LAION_15m/DS/DTD/scratch_shots_1 gs://clip_uw_cp/pretraining/CLIP_RN50_LAION_15m/DS/DTD/shots_1
-#gsutil -m cp -R gs://clip_uw_cp/pretraining/CLIP_RN50_LAION_15m/DS/DTD/scratch_shots_5 gs://clip_uw_cp/pretraining/CLIP_RN50_LAION_15m/DS/DTD/shots_5
-#gsutil -m cp -R gs://clip_uw_cp/pretraining/CLIP_RN50_LAION_15m/DS/DTD/scratch_shots_10 gs://clip_uw_cp/pretraining/CLIP_RN50_LAION_15m/DS/DTD/shots_10
-#gsutil -m cp -R gs://clip_uw_cp/pretraining/CLIP_RN50_LAION_15m/DS/DTD/scratch_shots_20 gs://clip_uw_cp/pretraining/CLIP_RN50_LAION_15m/DS/DTD/shots_20
-#gsutil -m cp -R gs://clip_uw_cp/pretraining/CLIP_RN50_LAION_15m/DS/DTD/scratch_shots_None gs://clip_uw_cp/pretraining/CLIP_RN50_LAION_15m/DS/DTD/shots_None
-
-
-
-
-
 #caliban cloud --name rn50_dtd --xgroup rn50_dtd --experiment_config config.json --gpu_spec 1xP100  --machine_type 'n1-standard-8' src/wise_ft.py
 ### IN
 #caliban run --experiment_config config.json src/wise_ft.py

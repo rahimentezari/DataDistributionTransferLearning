@@ -1,0 +1,9 @@
+# DataDisributionTransferLearning
+This is the code used for "The Role of Pre-training Data in Transfer Learning".
+Our CLIP models are trained from scratch on each of the pre-training datasets unless otherwise mentioned and follow the training code from the OpenCLIP GitHub repository\citep{ilharco_gabriel_2021_5143773}. CLIP models are trained using AdamW optimizer~\citep{loshchilov2017decoupled} with default PyTorch parameters $\beta_1= 0.9$, $\beta_2 = 0.999$, $\epsilon = 10^{-8}$, batch size 1024, and weight decay of 0.1. For learning rate, we start with a learning rate of $10^{-3}$ and apply a cosine-annealing learning rate schedule~\citep{loshchilov2016sgdr} with 5,000 steps warm-up. We use the same data augmentations as in\citep{radford2021learning}. 
+### SimCLR training
+Our SimCLR implementation closely follows the training code from the SLIP\citep{mu2021slip}. 
+SimCLR models are also trained for 16 epochs from scratch using AdamW optimizer~\citep{loshchilov2017decoupled} with $\beta_1= 0.9$, $\beta_2 = 0.98$, $\epsilon = 10^{-8}$, batch size 1024, and weight decay of 0.1. we start with a learning rate of $10^{-3}$ and apply a cosine-annealing learning rate schedule~\citep{loshchilov2016sgdr} with 2 epochs of warm-up. The hidden dimension of SimCLR MLP projection head is set to 4,094 and the output embedding dimension of MLP projection head is set to 256.
+
+### Finetuning detail
+Each pretrained model is finetuned on the specific downstream task for 128 epochs while the learning rate is from {0.0001, 0.0003, 0.001, 0.003} as starting and applying a cosine-annealing learning rate schedule~\citep{loshchilov2016sgdr} with 500 steps warm-up and batch size of 128. For each fine-tuning, we choose the best performing result on the test set among the performed grid search. We use the implementation from the WiSE-FT GitHub repository for fine-tuning, where we have only one model and $\alpha=1$~\citep{wortsman2021robust}.

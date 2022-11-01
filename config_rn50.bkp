@@ -1,0 +1,8067 @@
+############################################################## CLIP_RN50_CC_3m
+[{
+    "train-dataset": [
+        "DTD"
+    ],
+    "eval-datasets": [
+        "DTD"
+    ],
+    "epochs": [
+        64,128
+    ],
+    "freezeencoder":
+    [
+     0
+    ],
+    "lr": [
+        0.000003, 0.00001, 0.00003, 0.0001
+    ],
+    "batch-size": [
+        32,64,128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "upstream_dataset": [
+        "CC_3m"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "shots": [
+    1,5,10
+    ]
+},
+{
+    "train-dataset": [
+        "DTD"
+    ],
+    "eval-datasets": [
+        "DTD"
+    ],
+    "epochs": [
+        64,128
+    ],
+    "freezeencoder":
+    [
+     0
+    ],
+    "lr": [
+        0.000003, 0.00001, 0.00003, 0.0001
+    ],
+    "batch-size": [
+        32,64,128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "upstream_dataset": [
+        "CC_3m"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data"
+    ],
+    "alpha": [
+        1.0
+    ]
+}
+]
+
+
+############################################################## CLIP_RN50_CC_12m_2.7m
+
+
+
+{
+    "train-dataset": [
+        "DTD", "CIFAR100"
+    ],
+    "eval-datasets": [
+        "DTD", "CIFAR100"
+    ],
+    "epochs": [
+        64,128
+    ],
+    "freezeencoder":
+    [
+     0
+    ],
+    "lr": [
+        0.000003, 0.00001, 0.00003, 0.0001
+    ],
+    "batch-size": [
+        32,64,128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "upstream_dataset": [
+        "CC_12m_2.7m"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots": [
+    1, 5,10,20
+    ]
+}
+
+
+######## full
+{
+    "train-dataset": [
+        "DTD",
+        "CIFAR100"
+    ],
+    "epochs": [
+        64,
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00001,
+        0.00003,
+        0.0001
+    ],
+    "batch-size": [
+        32,
+        64,
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "upstream_dataset": [
+        "CC_12m_2.7m"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+}
+
+
+############################################################## CLIP_RN50_YFCC_2.7m
+
+
+{
+    "train-dataset": [
+        "DTD"
+    ],
+    "epochs": [
+        64,
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00001,
+        0.00003,
+        0.0001
+    ],
+    "batch-size": [
+        32,
+        64,
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "upstream_dataset": [
+        "YFCC_2.7m"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots": [
+    1, 5,10,20
+    ]
+}
+
+{
+    "train-dataset": [
+        "CIFAR100"
+    ],
+    "epochs": [
+        64,
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00001,
+        0.00003,
+        0.0001
+    ],
+    "batch-size": [
+        32,
+        64,
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "upstream_dataset": [
+        "Redcaps_2.7m"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots": [
+    1, 5,10,20
+    ]
+}
+
+
+#### full dtd and cifar
+{
+    "train-dataset": [
+        "CIFAR100",
+        "DTD"
+    ],
+    "epochs": [
+        64,
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00001,
+        0.00003,
+        0.0001,
+        0.0003
+    ],
+    "batch-size": [
+        32,
+        64,
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "upstream_dataset": [
+        "YFCC_2.7m"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+}
+
+###### dtd few
+{
+    "train-dataset": [
+        "DTD"
+    ],
+    "epochs": [
+        64,
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00001,
+        0.00003,
+        0.0001
+    ],
+    "batch-size": [
+        32,
+        64
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "upstream_dataset": [
+        "YFCC_2.7m"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots": [
+        1,5,10,20
+    ]
+}
+
+{
+    "train-dataset": [
+        "DTD"
+    ],
+    "epochs": [
+        64,
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00001,
+        0.00003,
+        0.0001
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "upstream_dataset": [
+        "YFCC_2.7m"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots": [
+        1,5,10,20
+    ]
+}
+
+
+
+
+############################################# CLIP_RN50_LAION_2.7m
+{
+    "train-dataset": [
+        "DTD"
+    ],
+    "upstream_dataset": [
+        "LAION_2.7m"
+    ],
+    "epochs": [
+        64,
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00001,
+        0.00003,
+        0.0001
+    ],
+    "batch-size": [
+        32,
+        64
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots": [
+    1, 5,10,20
+    ]
+}
+
+{
+    "train-dataset": [
+        "DTD"
+    ],
+    "upstream_dataset": [
+        "LAION_2.7m"
+    ],
+    "epochs": [
+        64,
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00001,
+        0.00003,
+        0.0001
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots": [
+    1, 5,10,20
+    ]
+}
+
+{
+    "train-dataset": [
+        "CIFAR100"
+    ],
+    "upstream_dataset": [
+        "LAION_2.7m"
+    ],
+    "epochs": [
+        64,
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00001,
+        0.00003,
+        0.0001
+    ],
+    "batch-size": [
+        32,
+        64,
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots": [
+    1, 5,10,20
+    ]
+}
+
+{
+    "train-dataset": [
+        "CIFAR100",
+        "DTD"
+    ],
+    "upstream_dataset": [
+        "LAION_2.7m"
+    ],
+    "epochs": [
+        64,
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00001,
+        0.00003,
+        0.0001
+    ],
+    "batch-size": [
+        32,
+        64,
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+}
+
+
+########### scratch upper lower bound
+##### openai
+{
+    "train-dataset": [
+        "CIFAR100"
+    ],
+    "upstream_dataset": [
+        "LAION_2.7m"
+    ],
+    "epochs": [
+        64,
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.000003,
+        0.00001,
+        0.00003,
+        0.0001,
+        0.0003,
+        0.001
+    ],
+    "batch-size": [
+        32,
+        64,
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots": [
+    20
+    ]
+}
+##### openai
+{
+    "train-dataset": [
+        "CIFAR100"
+    ],
+    "upstream_dataset": [
+        "LAION_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.0001,
+        0.0003,
+        0.001
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+}
+
+
+
+##### scratch
+
+
+
+
+{
+    "train-dataset": [
+        "CIFAR100"
+    ],
+    "upstream_dataset": [
+        "LAION_2.7m"
+    ],
+    "epochs": [
+        64,
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.0001,
+        0.0003,
+        0.001
+    ],
+    "batch-size": [
+        32,
+        64,
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots": [
+    20
+    ]
+}
+
+
+
+###### dtd scratch
+{
+    "train-dataset": [
+        "DTD"
+    ],
+    "upstream_dataset": [
+        "LAION_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.0001,
+        0.0003,
+        0.001
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+}
+
+
+{
+    "train-dataset": [
+        "CALTECH101", "PETS", "CLIPART", "REAL"
+    ],
+    "upstream_dataset": [
+        "LAION_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.0001,
+        0.0003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+}
+
+
+
+############################################################ CLIP_RN50_WIT_2.7m
+{
+    "train-dataset": [
+        "DTD",
+        "CIFAR100"
+    ],
+    "upstream_dataset": [
+        "WIT_2.7m"
+    ],
+    "epochs": [
+        64,
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00001,
+        0.00003,
+        0.0001
+    ],
+    "batch-size": [
+        32,
+        64
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots": [
+    1,5,10,20
+    ]
+}
+
+
+{
+    "train-dataset": [
+        "DTD",
+        "CIFAR100"
+    ],
+    "upstream_dataset": [
+        "WIT_2.7m"
+    ],
+    "epochs": [
+        64,
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00001,
+        0.00003,
+        0.0001
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots": [
+    1,5,10,20
+    ]
+}
+
+{
+    "train-dataset": [
+        "DTD",
+        "CIFAR100"
+    ],
+    "upstream_dataset": [
+        "WIT_2.7m"
+    ],
+    "epochs": [
+        64,
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00001,
+        0.00003,
+        0.0001
+    ],
+    "batch-size": [
+        32,
+        64,
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+
+}
+
+
+
+################################################################################# CLIP_RN50_shutter2.7
+{
+    "train-dataset": [
+        "DTD",
+        "CIFAR100"
+    ],
+    "upstream_dataset": [
+        "Shutterstock_2.7m"
+    ],
+    "epochs": [
+        64,
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00001,
+        0.00003,
+        0.0001
+    ],
+    "batch-size": [
+        32,
+        64
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots": [
+        1,5,10,20
+    ]
+
+}
+
+
+
+
+{
+    "train-dataset": [
+        "DTD",
+        "CIFAR100"
+    ],
+    "upstream_dataset": [
+        "Shutterstock_2.7m"
+    ],
+    "epochs": [
+        64,
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00001,
+        0.00003,
+        0.0001
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots": [
+        1,5,10,20
+    ]
+
+}
+
+
+
+
+
+{
+    "train-dataset": [
+        "DTD",
+        "CIFAR100"
+    ],
+    "upstream_dataset": [
+        "Shutterstock_2.7m"
+    ],
+    "epochs": [
+        64,
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00001,
+        0.00003,
+        0.0001
+    ],
+    "batch-size": [
+        32,
+        64,
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+
+}
+
+
+####################################################### IN
+
+{
+    "train-dataset": [
+        "ImageNet"
+    ],
+    "upstream_dataset": [
+        "YFCC_2.7m"
+    ],
+    "epochs": [
+        64
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.0001
+    ],
+    "batch-size": [
+        256
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+
+}
+
+{
+    "train-dataset": [
+        "ImageNet"
+    ],
+    "upstream_dataset": [
+        "LAION_2.7m"
+    ],
+    "epochs": [
+        64
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.0001
+    ],
+    "batch-size": [
+        256
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+
+}
+
+
+
+
+{
+    "train-dataset": [
+        "ImageNet"
+    ],
+    "upstream_dataset": [
+        "YFCC_2.7m", "LAION_2.7m"
+    ],
+    "epochs": [
+        64
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.0001
+    ],
+    "batch-size": [
+        256
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots": [
+        1,5,10,20
+    ]
+}
+
+
+
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ dataset size
+[
+{
+    "train-dataset": [
+        "DTD", "CIFAR100", "CALTECH101"
+    ],
+    "upstream_dataset": [
+        "YFCC_15m", "LAION_15m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00003,
+        0.0001,
+        0.0003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots": [
+    1,5,10,20
+    ]
+},
+{
+    "train-dataset": [
+        "DTD", "CIFAR100"
+    ],
+    "upstream_dataset": [
+        "YFCC_15m", "LAION_15m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00003,
+        0.0001,
+        0.0003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+}
+]
+
+
+
+
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ more datasets
+[
+{
+    "train-dataset": [
+        "CALTECH101"
+    ],
+    "upstream_dataset": [
+        "CC_3m", "CC_12m_2.7m", "Redcaps_2.7m", "YFCC_2.7m", "LAION_2.7m", "WIT_2.7m", "Shutterstock_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00003,
+        0.0001,
+        0.0003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots": [
+    1,5,10,20
+    ]
+},
+{
+    "train-dataset": [
+        "CALTECH101"
+    ],
+    "upstream_dataset": [
+        "CC_3m", "CC_12m_2.7m", "Redcaps_2.7m", "YFCC_2.7m", "LAION_2.7m", "WIT_2.7m", "Shutterstock_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00003,
+        0.0001,
+        0.0003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+}
+]
+
+#### domainnet
+[
+{
+    "train-dataset": [
+        "REAL", "CLIPART"
+    ],
+    "upstream_dataset": [
+        "CC_3m", "CC_12m_2.7m", "Redcaps_2.7m", "YFCC_2.7m", "LAION_2.7m", "WIT_2.7m", "Shutterstock_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00003,
+        0.0001,
+        0.0003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        2
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+},
+    {
+    "train-dataset": [
+        "CLIPART", "REAL"
+    ],
+    "upstream_dataset": [
+        "CC_3m", "CC_12m_2.7m", "Redcaps_2.7m", "YFCC_2.7m", "LAION_2.7m", "WIT_2.7m", "Shutterstock_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00003,
+        0.0001,
+        0.0003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        2
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots": [
+    1,5
+    ]
+}
+]
+
+
+
+####### cifar100 100 shots 200 shots
+{
+    "train-dataset": [
+        "CIFAR100"
+    ],
+    "upstream_dataset": [
+         "CC_3m", "CC_12m_2.7m", "Redcaps_2.7m", "YFCC_2.7m", "LAION_2.7m", "WIT_2.7m", "Shutterstock_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00003,
+        0.0001,
+        0.0003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots": [
+    100
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+##### caltech 15m
+[
+{
+    "train-dataset": [
+        "CALTECH101"
+    ],
+    "upstream_dataset": [
+        "YFCC_15m", "LAION_15m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00003,
+        0.0001,
+        0.0003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots": [
+    1,5,10,20
+    ]
+},
+{
+    "train-dataset": [
+        "CALTECH101"
+    ],
+    "upstream_dataset": [
+        "YFCC_15m", "LAION_15m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00003,
+        0.0001,
+        0.0003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+}
+]
+
+############################# PETS
+{
+    "train-dataset": [
+        "PETS"
+    ],
+    "upstream_dataset": [
+        "CC_3m", "CC_12m_2.7m", "Redcaps_2.7m", "YFCC_2.7m", "LAION_2.7m", "WIT_2.7m", "Shutterstock_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00003,
+        0.0001,
+        0.0003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        2
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+}
+#####################################3 16 epochs vs. 40 epochs
+[
+{
+    "train-dataset": [
+        "CALTECH101"
+    ],
+    "upstream_dataset": [
+        "CC_3m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00003,
+        0.0001,
+        0.0003,
+        0.0006,
+        0.001
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        2
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots": [
+        1,5,10
+    ]
+},
+{
+    "train-dataset": [
+        "CALTECH101"
+    ],
+    "upstream_dataset": [
+        "CC_3m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00003,
+        0.0001,
+        0.0003,
+        0.0006,
+        0.001
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        2
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+}
+]
+
+######################################################################################################## SimCLR
+[
+    {
+    "train-dataset": [
+        "DTD"
+    ],
+    "upstream_dataset": [
+        "Shutterstock_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00003,
+        0.0001,
+        0.0003
+    ],
+    "batch-size": [
+        256
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "SimCLR"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+},
+{
+    "train-dataset": [
+        "DTD"
+    ],
+    "upstream_dataset": [
+        "Shutterstock_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00003,
+        0.0001,
+        0.0003
+    ],
+    "batch-size": [
+        256
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "SimCLR"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots": [
+        1,5,10,20
+    ]
+}
+]
+
+
+
+[
+    {
+    "train-dataset": [
+        "DTD"
+    ],
+    "upstream_dataset": [
+        "Redcaps_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00003,
+        0.0001,
+        0.0003
+    ],
+    "batch-size": [
+        256
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "SimCLR"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+},
+{
+    "train-dataset": [
+        "DTD"
+    ],
+    "upstream_dataset": [
+        "Redcaps_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00003,
+        0.0001,
+        0.0003
+    ],
+    "batch-size": [
+        256
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "SimCLR"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots": [
+        1,5,10,20
+    ]
+}
+]
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ sim clr new params
+{
+    "train-dataset": [
+        "DTD"
+    ],
+    "upstream_dataset": [
+        "Redcaps_2.7m", "Shutterstock_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.0006,
+        0.001,
+        0.003
+    ],
+    "batch-size": [
+        256
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "SimCLR"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+}
+
+
+
+
+[
+    {
+    "train-dataset": [
+        "PETS"
+    ],
+    "upstream_dataset": [
+        "Redcaps_2.7m", "Shutterstock_2.7m", "CC_12m_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00003,
+        0.0001,
+        0.0003
+    ],
+    "batch-size": [
+        256
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "SimCLR"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+},
+{
+    "train-dataset": [
+        "PETS"
+    ],
+    "upstream_dataset": [
+        "Redcaps_2.7m", "Shutterstock_2.7m", "CC_12m_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00003,
+        0.0001,
+        0.0003
+    ],
+    "batch-size": [
+        256
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "SimCLR"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots": [
+        1,5,10,20
+    ]
+}
+]
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ IN_captions
+{
+    "train-dataset": [
+        "DTD"
+    ],
+    "upstream_dataset": [
+        "IN1K_captions"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00001,
+        0.00003,
+        0.0001,
+        0.0003,
+        0.001
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+}
+
+
+
+###############################
+[
+{
+    "train-dataset": [
+        "DTD", "PETS"
+    ],
+    "upstream_dataset": [
+        "IN1K_captions"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.0003,
+        0.001,
+        0.003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots": [
+        1,5,10,20
+    ]
+},
+{
+    "train-dataset": [
+        "DTD", "PETS"
+    ],
+    "upstream_dataset": [
+        "IN1K_captions"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.0003,
+        0.001,
+        0.003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+}
+]
+
+
+[
+{
+    "train-dataset": [
+        "CALTECH101"
+    ],
+    "upstream_dataset": [
+        "IN1K_captions"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.0003,
+        0.001,
+        0.003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots": [
+        1,5,10
+    ]
+},
+{
+    "train-dataset": [
+        "CALTECH101"
+    ],
+    "upstream_dataset": [
+        "IN1K_captions"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.0003,
+        0.001,
+        0.003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+}
+]
+
+
+
+[
+{
+    "train-dataset": [
+        "CLIPART"
+    ],
+    "upstream_dataset": [
+        "IN1K_captions"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.0003,
+        0.001,
+        0.003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots": [
+        1,5,10,20
+    ]
+},
+{
+    "train-dataset": [
+        "CLIPART"
+    ],
+    "upstream_dataset": [
+        "IN1K_captions"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.0003,
+        0.001,
+        0.003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+}
+]
+
+
+
+
+
+{
+    "train-dataset": [
+        "REAL"
+    ],
+    "upstream_dataset": [
+        "IN1K_captions"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.0003,
+        0.001,
+        0.003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots": [
+        1,5,10,20
+    ]
+}
+
+{
+    "train-dataset": [
+        "REAL"
+    ],
+    "upstream_dataset": [
+        "IN1K_captions"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.0003,
+        0.001,
+        0.003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        2
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+}
+
+
+
+#########
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ CLIP_RN50_YFCC_0.5
+[
+    {
+    "train-dataset": [
+        "DTD"
+    ],
+    "upstream_dataset": [
+        "YFCC_0.5m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00003,
+        0.0001,
+        0.0003,
+        0.001,
+        0.003,
+        0.006
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots": [
+        1,5,10,20
+    ]
+},
+{
+    "train-dataset": [
+        "DTD"
+    ],
+    "upstream_dataset": [
+        "YFCC_0.5m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00003,
+        0.0001,
+        0.0003,
+        0.001,
+        0.003,
+        0.006
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+}
+    ]
+
+[
+    {
+    "train-dataset": [
+        "PETS"
+    ],
+    "upstream_dataset": [
+        "YFCC_0.5m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.001,
+        0.003,
+        0.006
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots": [
+        1,5,10,20
+    ]
+},
+{
+    "train-dataset": [
+        "PETS"
+    ],
+    "upstream_dataset": [
+        "YFCC_0.5m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.001,
+        0.003,
+        0.006
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+}
+    ]
+
+
+[
+    {
+    "train-dataset": [
+        "CALTECH101"
+    ],
+    "upstream_dataset": [
+        "YFCC_0.5m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.001,
+        0.003,
+        0.006
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots": [
+        1,5,10
+    ]
+},
+{
+    "train-dataset": [
+        "CALTECH101"
+    ],
+    "upstream_dataset": [
+        "YFCC_0.5m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.001,
+        0.003,
+        0.006
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+}
+    ]
+
+
+[
+    {
+    "train-dataset": [
+        "CIFAR100","CLIPART"
+    ],
+    "upstream_dataset": [
+        "YFCC_0.5m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.001,
+        0.003,
+        0.006
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots": [
+        1,5,10,20
+    ]
+},
+{
+    "train-dataset": [
+        "CIFAR100","CLIPART"
+    ],
+    "upstream_dataset": [
+        "YFCC_0.5m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.001,
+        0.003,
+        0.006
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+}
+    ]
+
+[
+    {
+    "train-dataset": [
+        "REAL"
+    ],
+    "upstream_dataset": [
+        "YFCC_0.5m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.001,
+        0.003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots": [
+        1,5,10, 20
+    ]
+}    ]
+
+
+
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ SIMCLR
+{
+    "train-dataset": [
+        "DTD"
+    ],
+    "upstream_dataset": [
+        "Redcaps_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00003,
+        0.0001,
+        0.0003,
+        0.001,
+        0.003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "SimCLR"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+}
+
+[
+    {
+    "train-dataset": [
+        "DTD"
+    ],
+    "upstream_dataset": [
+        "Redcaps_2.7m", "Shutterstock_2.7m", "CC_12m_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.0005,
+        0.001,
+        0.002
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "SimCLR"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots":[
+        1,5,10,20
+    ]
+},
+{
+    "train-dataset": [
+        "DTD"
+    ],
+    "upstream_dataset": [
+        "Redcaps_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.0005,
+        0.002
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "SimCLR"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+},
+    {
+    "train-dataset": [
+        "DTD"
+    ],
+    "upstream_dataset": [
+        "Shutterstock_2.7m", "CC_12m_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.0005,
+        0.001,
+        0.002
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "SimCLR"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+}
+]
+
+### cifar100_full
+{
+    "train-dataset": [
+        "CIFAR100"
+    ],
+    "upstream_dataset": [
+        "Redcaps_2.7m", "Shutterstock_2.7m", "CC_12m_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.0005,
+        0.001,
+        0.002
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "SimCLR"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+}
+
+[
+    {
+    "train-dataset": [
+        "CALTECH101"
+    ],
+    "upstream_dataset": [
+        "Redcaps_2.7m", "Shutterstock_2.7m", "CC_12m_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.0005,
+        0.001,
+        0.002
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "SimCLR"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots":[
+        1,5,10
+    ]
+},
+{
+    "train-dataset": [
+        "CIFAR100"
+    ],
+    "upstream_dataset": [
+        "Redcaps_2.7m", "Shutterstock_2.7m", "CC_12m_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.0005,
+        0.002
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "SimCLR"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots":[
+        1,5,10,20
+    ]
+},
+        {
+    "train-dataset": [
+        "CALTECH101"
+    ],
+    "upstream_dataset": [
+        "Redcaps_2.7m", "Shutterstock_2.7m", "CC_12m_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.0005,
+        0.001,
+        0.002
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "SimCLR"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+}
+    ]
+
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$4 Linear probe
+{
+    "train-dataset": [
+        "CIFAR100"
+    ],
+    "upstream_dataset": [
+        "Redcaps_2.7m", "Shutterstock_2.7m", "CC_12m_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        1
+    ],
+    "lr": [
+        #0.0001,
+        #0.0003,
+        0.001,
+        0.003
+        #0.005
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "SimCLR"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        2
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots":[
+        10,20
+    ]
+}
+
+
+
+[
+    {
+    "train-dataset": [
+        "CIFAR100", "DTD", "CALTECH101"
+    ],
+    "upstream_dataset": [
+        "Redcaps_2.7m", "Shutterstock_2.7m", "CC_12m_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        1
+    ],
+    "lr": [
+        0.001,
+        0.003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "SimCLR"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        2
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+},
+{
+    "train-dataset": [
+        "CIFAR100"
+    ],
+    "upstream_dataset": [
+        "Redcaps_2.7m", "Shutterstock_2.7m", "CC_12m_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        1
+    ],
+    "lr": [
+        0.001,
+        0.003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "SimCLR"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        2
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots":[
+        1,5, 10, 20
+    ]
+},
+{
+    "train-dataset": [
+        "DTD"
+    ],
+    "upstream_dataset": [
+        "Redcaps_2.7m", "Shutterstock_2.7m", "CC_12m_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        1
+    ],
+    "lr": [
+        0.001,
+        0.003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "SimCLR"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        2
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots":[
+        1,5,10,20
+    ]
+},
+{
+    "train-dataset": [
+        "CALTECH101"
+    ],
+    "upstream_dataset": [
+        "Redcaps_2.7m", "Shutterstock_2.7m", "CC_12m_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        1
+    ],
+    "lr": [
+        0.001,
+        0.003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "SimCLR"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        2
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots":[
+        1,5,10
+    ]
+}
+]
+
+[
+    {
+    "train-dataset": [
+        "CIFAR100"
+    ],
+    "upstream_dataset": [
+        "Redcaps_2.7m", "Shutterstock_2.7m", "CC_12m_2.7m"
+    ],
+    "finetune_strategy": [
+        "lp_ft"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        1
+    ],
+    "lr": [
+        0.0001,
+        0.0003,
+        0.001
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "SimCLR"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        2
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots":[
+        1,5,10,20
+        ]
+
+}
+
+]
+
+[
+    {
+    "train-dataset": [
+        "CIFAR100"
+    ],
+    "upstream_dataset": [
+        "Redcaps_2.7m", "Shutterstock_2.7m", "CC_12m_2.7m"
+    ],
+    "finetune_strategy": [
+        "lp_ft"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        1
+    ],
+    "lr": [
+        0.0001,
+        0.0003,
+        0.001
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "SimCLR"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        2
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+}
+
+]
+
+[
+            {
+    "train-dataset": [
+        "DTD"
+    ],
+    "upstream_dataset": [
+        "Redcaps_2.7m", "Shutterstock_2.7m", "CC_12m_2.7m"
+    ],
+    "finetune_strategy": [
+        "lp_ft"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        1
+    ],
+    "lr": [
+        0.0001,
+        0.0003,
+        0.001
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "SimCLR"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        2
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots": [
+        1,5,10,20
+    ]
+},
+    {
+    "train-dataset": [
+        "DTD"
+    ],
+    "upstream_dataset": [
+        "Redcaps_2.7m", "Shutterstock_2.7m", "CC_12m_2.7m"
+    ],
+    "finetune_strategy": [
+        "lp_ft"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        1
+    ],
+    "lr": [
+        0.0001,
+        0.0003,
+        0.001
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "SimCLR"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        2
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+}
+
+]
+
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ LP_FT
+$$$$$ lp
+[
+    {
+    "train-dataset": [
+        "CIFAR100"
+    ],
+    "upstream_dataset": [
+        "Redcaps_2.7m", "Shutterstock_2.7m", "CC_12m_2.7m"
+    ],
+    "finetune_strategy": [
+        "lp"
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        1
+    ],
+    "lr": [
+        0.001,
+        0.003
+
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        2
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots":[
+        1,5,10,20
+        ]
+
+}
+
+]
+$$$$$$lp_ft
+[
+    {
+    "train-dataset": [
+        "CIFAR100"
+    ],
+    "upstream_dataset": [
+        "Redcaps_2.7m", "Shutterstock_2.7m", "CC_12m_2.7m"
+    ],
+    "finetune_strategy": [
+        "lp_ft"
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.0001,
+        0.0003,
+        0.001
+
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        2
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots":[
+        1,5,10,20
+        ]
+
+}
+
+]
+
+
+
+
+[
+    {
+    "train-dataset": [
+        "CIFAR100"
+    ],
+    "upstream_dataset": [
+        "Redcaps_2.7m", "Shutterstock_2.7m", "CC_12m_2.7m"
+    ],
+    "finetune_strategy": [
+        "lp_ft"
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00001,
+        0.00003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        2
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots":[
+        1,5,10,20
+        ]
+
+},
+        {
+    "train-dataset": [
+        "CIFAR100"
+    ],
+    "upstream_dataset": [
+        "Redcaps_2.7m", "Shutterstock_2.7m", "CC_12m_2.7m"
+    ],
+    "finetune_strategy": [
+        "lp_ft"
+    ],
+    "upstream_loss": [
+        "SimCLR"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00001,
+        0.00003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        2
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots":[
+        1,5,10,20
+        ]
+
+}
+
+]
+
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ LAION2B
+[
+    {
+    "train-dataset": [
+        "CIFAR100"
+    ],
+    "upstream_dataset": [
+        "LAION_2B"
+    ],
+    "finetune_strategy": [
+        "ft"
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00001,
+        0.00003,
+        0.0001
+
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+
+    "upstream_arch": [
+        "VITB32"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        2
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots":[
+        1,5,10,20
+        ]
+
+}
+
+]
+
+
+[
+    {
+    "train-dataset": [
+        "CIFAR100"
+    ],
+    "upstream_dataset": [
+        "LAION_2B"
+    ],
+    "finetune_strategy": [
+        "ft"
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.000003
+
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+
+    "upstream_arch": [
+        "VITB32"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        2
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots":[
+        1,5,10,20
+        ]
+
+},
+        {
+    "train-dataset": [
+        "DTD"
+    ],
+    "upstream_dataset": [
+        "LAION_2B"
+    ],
+    "finetune_strategy": [
+        "ft"
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.000003,
+        0.00001,
+        0.00003
+
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+
+    "upstream_arch": [
+        "VITB32"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        2
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots":[
+        1,5,10,20
+        ]
+
+},
+        {
+    "train-dataset": [
+        "CALTECH101"
+    ],
+    "upstream_dataset": [
+        "LAION_2B"
+    ],
+    "finetune_strategy": [
+        "ft"
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.000003,
+        0.00001,
+        0.00003
+
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+
+    "upstream_arch": [
+        "VITB32"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        2
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots":[
+        1,5,10
+        ]
+
+}
+
+
+]
+
+[
+    {
+    "train-dataset": [
+        "CIFAR100"
+    ],
+    "upstream_dataset": [
+        "LAION_2B"
+    ],
+    "finetune_strategy": [
+        "ft"
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.000003
+
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+
+    "upstream_arch": [
+        "VITB32"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        2
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+
+},
+        {
+    "train-dataset": [
+        "DTD"
+    ],
+    "upstream_dataset": [
+        "LAION_2B"
+    ],
+    "finetune_strategy": [
+        "ft"
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.000003,
+        0.00001,
+        0.00003
+
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+
+    "upstream_arch": [
+        "VITB32"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        2
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+
+},
+        {
+    "train-dataset": [
+        "CALTECH101"
+    ],
+    "upstream_dataset": [
+        "LAION_2B"
+    ],
+    "finetune_strategy": [
+        "ft"
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "epochs": [
+        128
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.000003,
+        0.00001,
+        0.00003
+
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+
+    "upstream_arch": [
+        "VITB32"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        2
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+
+}
+
+
+]
+
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ clip_sim_lp_dtd_caltech
+[
+{
+    "train-dataset": [
+        "CALTECH101"
+    ],
+    "upstream_dataset": [
+        "Redcaps_2.7m", "Shutterstock_2.7m", "CC_12m_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "lp"
+    ],
+    "freezeencoder": [
+        1
+    ],
+    "lr": [
+        0.001,
+        0.003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "SimCLR"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        2
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots":[
+        1,5,10
+    ]
+},
+{
+    "train-dataset": [
+        "DTD"
+    ],
+    "upstream_dataset": [
+        "Redcaps_2.7m", "Shutterstock_2.7m", "CC_12m_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "lp"
+    ],
+    "freezeencoder": [
+        1
+    ],
+    "lr": [
+        0.001,
+        0.003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "SimCLR"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        2
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots":[
+        1,5,10,20
+    ]
+},
+{
+    "train-dataset": [
+        "CALTECH101"
+    ],
+    "upstream_dataset": [
+        "Redcaps_2.7m", "Shutterstock_2.7m", "CC_12m_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "lp"
+    ],
+    "freezeencoder": [
+        1
+    ],
+    "lr": [
+        0.001,
+        0.003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "SimCLR"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        2
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+},
+{
+    "train-dataset": [
+        "DTD"
+    ],
+    "upstream_dataset": [
+        "Redcaps_2.7m", "Shutterstock_2.7m", "CC_12m_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "lp"
+    ],
+    "freezeencoder": [
+        1
+    ],
+    "lr": [
+        0.001,
+        0.003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "SimCLR"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        2
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+},
+
+{
+    "train-dataset": [
+        "CALTECH101"
+    ],
+    "upstream_dataset": [
+        "Redcaps_2.7m", "Shutterstock_2.7m", "CC_12m_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "lp"
+    ],
+    "freezeencoder": [
+        1
+    ],
+    "lr": [
+        0.001,
+        0.003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        2
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots":[
+        1,5,10
+    ]
+},
+{
+    "train-dataset": [
+        "DTD"
+    ],
+    "upstream_dataset": [
+        "Redcaps_2.7m", "Shutterstock_2.7m", "CC_12m_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "lp"
+    ],
+    "freezeencoder": [
+        1
+    ],
+    "lr": [
+        0.001,
+        0.003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        2
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots":[
+        1,5,10,20
+    ]
+},
+{
+    "train-dataset": [
+        "CALTECH101"
+    ],
+    "upstream_dataset": [
+        "Redcaps_2.7m", "Shutterstock_2.7m", "CC_12m_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "lp"
+    ],
+    "freezeencoder": [
+        1
+    ],
+    "lr": [
+        0.001,
+        0.003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        2
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+},
+{
+    "train-dataset": [
+        "DTD"
+    ],
+    "upstream_dataset": [
+        "Redcaps_2.7m", "Shutterstock_2.7m", "CC_12m_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "lp"
+    ],
+    "freezeencoder": [
+        1
+    ],
+    "lr": [
+        0.001,
+        0.003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        2
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+}
+]
+
+
+############################################################### clip_sim_lp_ft_cifar_full
+[
+{
+    "train-dataset": [
+        "CIFAR100"
+    ],
+    "upstream_dataset": [
+        "Redcaps_2.7m", "Shutterstock_2.7m", "CC_12m_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "lp_ft"
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00003,
+        0.0001,
+        0.0003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "SimCLR"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        2
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+},
+    {
+    "train-dataset": [
+        "CIFAR100"
+    ],
+    "upstream_dataset": [
+        "Redcaps_2.7m", "Shutterstock_2.7m", "CC_12m_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "lp_ft"
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00003,
+        0.0001,
+        0.0003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        2
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+}
+]
+
+
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+[{
+    "train-dataset": [
+        "DTD","CALTECH101"
+    ],
+    "upstream_dataset": [
+        "Redcaps_2.7m", "Shutterstock_2.7m", "CC_12m_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "lp_ft"
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00003,
+        0.0001,
+        0.0003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP", "SimCLR"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        2
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        1
+    ],
+    "shots": [
+        1,5,10
+    ]
+},
+{
+    "train-dataset": [
+        "DTD"
+    ],
+    "upstream_dataset": [
+        "Redcaps_2.7m", "Shutterstock_2.7m", "CC_12m_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "lp_ft"
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00003,
+        0.0001,
+        0.0003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP", "SimCLR"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        2
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        1
+    ],
+    "shots": [
+        20
+    ]
+}
+    ]
+
+######## sim lp_ft_ dtd few shot strange
+{
+    "train-dataset": [
+        "DTD"
+    ],
+    "upstream_dataset": [
+        "Redcaps_2.7m", "Shutterstock_2.7m", "CC_12m_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "lp"
+    ],
+    "freezeencoder": [
+        1
+    ],
+    "lr": [
+        0.003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "SimCLR"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        2
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        1
+    ],
+    "shots": [
+        10, 20
+    ]
+}
+
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$44 Alex IN Captions
+[
+{
+    "train-dataset": [
+        "DTD"
+    ],
+    "upstream_dataset": [
+        "ImageNet1K_Captions"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "ft"
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.0001,
+        0.0003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots":[
+        1,5,10,20
+    ]
+},
+{
+    "train-dataset": [
+        "CIFAR100"
+    ],
+    "upstream_dataset": [
+        "ImageNet1K_Captions"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "ft"
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.0001,
+        0.0003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+},
+    {
+    "train-dataset": [
+        "CALTECH101"
+    ],
+    "upstream_dataset": [
+        "ImageNet1K_Captions"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "ft"
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.0001,
+        0.0003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots":[
+        1,5,10
+    ]
+},
+    {
+    "train-dataset": [
+        "CALTECH101"
+    ],
+    "upstream_dataset": [
+        "ImageNet1K_Captions"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "ft"
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.0001,
+        0.0003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+},
+    {
+    "train-dataset": [
+        "PETS"
+    ],
+    "upstream_dataset": [
+        "ImageNet1K_Captions"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "ft"
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.0001,
+        0.0003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots":[
+        1,5,10,20
+    ]
+},
+    {
+    "train-dataset": [
+        "PETS"
+    ],
+    "upstream_dataset": [
+        "ImageNet1K_Captions"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "ft"
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.0001,
+        0.0003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+},
+    {
+    "train-dataset": [
+        "REAL"
+    ],
+    "upstream_dataset": [
+        "ImageNet1K_Captions"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "ft"
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.0001,
+        0.0003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots":[
+        1,5,10,20
+    ]
+},
+    {
+    "train-dataset": [
+        "CLIPART"
+    ],
+    "upstream_dataset": [
+        "ImageNet1K_Captions"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "ft"
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.0001,
+        0.0003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots":[
+        1,5,10,20
+    ]
+}
+]
+
+
+######################################## YFCC 1m
+[
+      {
+    "train-dataset": [
+        "CIFAR100"
+    ],
+    "upstream_dataset": [
+        "YFCC_1m"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "ft"
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.001,
+        0.003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots":[
+        1,5,10,20
+    ]
+},
+{
+    "train-dataset": [
+        "CIFAR100"
+    ],
+    "upstream_dataset": [
+        "YFCC_1m"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "ft"
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.001,
+        0.003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+},
+{
+    "train-dataset": [
+        "DTD"
+    ],
+    "upstream_dataset": [
+        "YFCC_1m"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "ft"
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.001,
+        0.003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots":[
+        1,5,10,20
+    ]
+},
+    {
+    "train-dataset": [
+        "DTD"
+    ],
+    "upstream_dataset": [
+        "YFCC_1m"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "ft"
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.001,
+        0.003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+},
+
+    {
+    "train-dataset": [
+        "CALTECH101"
+    ],
+    "upstream_dataset": [
+        "YFCC_1m"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "ft"
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.001,
+        0.003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots":[
+        1,5,10
+    ]
+},
+    {
+    "train-dataset": [
+        "CALTECH101"
+    ],
+    "upstream_dataset": [
+        "YFCC_1m"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "ft"
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.001,
+        0.003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+},
+    {
+    "train-dataset": [
+        "PETS"
+    ],
+    "upstream_dataset": [
+        "YFCC_1m"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "ft"
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.001,
+        0.003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots":[
+        1,5,10,20
+    ]
+},
+    {
+    "train-dataset": [
+        "PETS"
+    ],
+    "upstream_dataset": [
+        "YFCC_1m"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "ft"
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.001,
+        0.003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+},
+    {
+    "train-dataset": [
+        "REAL"
+    ],
+    "upstream_dataset": [
+        "YFCC_1m"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "ft"
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.001,
+        0.003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots":[
+        1,5,10,20
+    ]
+},
+    {
+    "train-dataset": [
+        "CLIPART"
+    ],
+    "upstream_dataset": [
+        "YFCC_1m"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "ft"
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.001,
+        0.003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots":[
+        1,5,10,20
+    ]
+}
+]
+
+
+################################# LAION15m new
+[
+{
+    "train-dataset": [
+        "PETS"
+    ],
+    "upstream_dataset": [
+        "LAION_15m"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "ft"
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00003,
+        0.0001
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots":[
+        1,5,10,20
+    ]
+},
+{
+    "train-dataset": [
+        "PETS"
+    ],
+    "upstream_dataset": [
+        "LAION_15m"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "ft"
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00003,
+        0.0001
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+},
+{
+    "train-dataset": [
+        "REAL"
+    ],
+    "upstream_dataset": [
+        "LAION_15m"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "ft"
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00003,
+        0.0001
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots":[
+        1,5,10,20
+    ]
+},
+{
+    "train-dataset": [
+        "CLIPART"
+    ],
+    "upstream_dataset": [
+        "LAION_15m"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "ft"
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00003,
+        0.0001
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots":[
+        1,5,10,20
+    ]
+}
+]
+
+
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ new datasets
+$$$$$$ cassa leaf
+[
+{
+    "train-dataset": [
+        "CassavaLeafDisease"
+    ],
+    "upstream_dataset": [
+        "CC_3m", "CC_12m_2.7m", "Redcaps_2.7m", "YFCC_2.7m", "LAION_2.7m", "WIT_2.7m", "Shutterstock_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "ft"
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00003,
+        0.0001,
+        0.0003,
+        0.001,
+        0.003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots":[
+        1,5,10,20
+    ]
+},
+{
+    "train-dataset": [
+        "CassavaLeafDisease"
+    ],
+    "upstream_dataset": [
+        "CC_3m", "CC_12m_2.7m", "Redcaps_2.7m", "YFCC_2.7m", "LAION_2.7m", "WIT_2.7m", "Shutterstock_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "ft"
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00003,
+        0.0001
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+}
+    ]
+
+############ camera traps
+[
+{
+    "train-dataset": [
+        "CameraTraps"
+    ],
+    "upstream_dataset": [
+        "CC_3m", "CC_12m_2.7m", "Redcaps_2.7m", "YFCC_2.7m", "LAION_2.7m", "WIT_2.7m", "Shutterstock_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "ft"
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.0001,
+        0.0003,
+        0.001,
+        0.003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots":[
+        1,5,10,20
+    ]
+},
+{
+    "train-dataset": [
+        "CameraTraps"
+    ],
+    "upstream_dataset": [
+        "CC_3m", "CC_12m_2.7m", "Redcaps_2.7m", "YFCC_2.7m", "LAION_2.7m", "WIT_2.7m", "Shutterstock_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "ft"
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00003,
+        0.0001,
+        0.0003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+}
+    ]
+
+####### euro sat
+[
+{
+    "train-dataset": [
+        "EuroSAT"
+    ],
+    "upstream_dataset": [
+        "CC_3m", "CC_12m_2.7m", "Redcaps_2.7m", "YFCC_2.7m", "LAION_2.7m", "WIT_2.7m", "Shutterstock_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "ft"
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.0001,
+        0.0003,
+        0.001,
+        0.003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots":[
+        1,5,10,20
+    ]
+},
+{
+    "train-dataset": [
+        "EuroSAT"
+    ],
+    "upstream_dataset": [
+        "CC_3m", "CC_12m_2.7m", "Redcaps_2.7m", "YFCC_2.7m", "LAION_2.7m", "WIT_2.7m", "Shutterstock_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "ft"
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.00003,
+        0.0001,
+        0.0003
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ]
+}
+    ]

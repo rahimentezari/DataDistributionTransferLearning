@@ -1,0 +1,239 @@
+[
+    {
+    "train-dataset": [
+        "EuroSAT"
+    ],
+    "upstream_dataset": [
+        "CC_3m"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "ft"
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.005
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots":[
+        10
+    ]
+},
+       {
+    "train-dataset": [
+        "EuroSAT"
+    ],
+    "upstream_dataset": [
+        "CC_12m_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "ft"
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.002
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots":[
+        5,10,20
+    ]
+},
+{
+    "train-dataset": [
+        "CameraTraps"
+    ],
+    "upstream_dataset": [
+        "CC_3m", "CC_12m_2.7m", "Redcaps_2.7m", "YFCC_2.7m", "LAION_2.7m", "WIT_2.7m", "Shutterstock_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "ft"
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.002,
+        0.005
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots":[
+        10,20
+    ]
+},
+{
+    "train-dataset": [
+        "CassavaLeafDisease"
+    ],
+    "upstream_dataset": [
+        "CC_3m", "Redcaps_2.7m",  "LAION_2.7m", "WIT_2.7m"
+    ],
+    "epochs": [
+        128
+    ],
+    "finetune_strategy": [
+        "ft"
+    ],
+    "freezeencoder": [
+        0
+    ],
+    "lr": [
+        0.005
+    ],
+    "batch-size": [
+        128
+    ],
+    "wd": [
+        0.1
+    ],
+    "upstream_loss": [
+        "CLIP"
+    ],
+    "upstream_arch": [
+        "RN50"
+    ],
+    "model": [
+        "bucket"
+    ],
+    "template": [
+        "openai_imagenet_template"
+    ],
+    "save_ckpt_freq": [
+        1
+    ],
+    "results-db": [
+        "results.json"
+    ],
+    "save": [
+        "models/wiseft/RN50"
+    ],
+    "data-location": [
+        "~/data/"
+    ],
+    "alpha": [
+        1.0
+    ],
+    "seed": [
+        0
+    ],
+    "shots":[
+        10,20
+    ]
+}
+    ]

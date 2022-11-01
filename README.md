@@ -28,6 +28,7 @@ export PYTHONPATH="$PYTHONPATH:$PWD"
 
 ### Working with Caliban
 Most experiments in this repositoty were done using [Caliban](https://github.com/google/caliban). Caliban is a tool for developing research workflow and notebooks in an isolated Docker environment and submitting those isolated environments to Google Compute Cloud.
+Basically you can use the commands in run.sh for different experiments. Each run will load the hyperparameters from [config.json](https://github.com/rahimentezari/DataDisributionTransferLearning/blob/main/config.json) and save results in the Google Bucket.
 Below is a short step-by-step how to run Caliban on GCP:
 1. sudo apt-get install python3 python3-venv python3-pip
 2. sudo usermod -a -G docker ${USER}

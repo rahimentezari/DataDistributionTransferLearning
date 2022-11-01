@@ -25,3 +25,8 @@ conda activate DataDisributionTransferLearning
 cd DataDisributionTransferLearning
 export PYTHONPATH="$PYTHONPATH:$PWD"
 ```
+
+### Working with Caliban
+Most experiments in this repositoty were done using [Caliban](https://github.com/google/caliban). Caliban is a tool for developing research workflow and notebooks in an isolated Docker environment and submitting those isolated environments to Google Compute Cloud.
+Below is a short step-by-step how to run Caliban on GCP:
+

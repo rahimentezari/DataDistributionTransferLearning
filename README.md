@@ -44,4 +44,24 @@ https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.
 > To check if all is well, run
 caliban --help
 
+### Setting up Google Cloud for Caliban
+9. Give the account owner the name of the account:
+Go to vm details> API and identity management
+> Service account 
+Add the Service account($$$@developer.gserviceaccount.com) as an owner to the IAMadmin in google console.
+
+10. Also add this to the bucket as storage object admin if you are using Google Bucket
+
+11. gcloud init
+- Select the account
+- Set default zone to some zone e.g. europe-west4-a (number 14)
+12. Add the following lines to the end of “~/.bashrc”
+export REGION="your zone e.g. europe-west4 "
+export PROJECT_ID="your project ID"
+
+source ~/.bashrc
+
+> Test your Environment: gcloud auth list
+13. [Follow these steps to get a JSON file for credentials](https://cloud.google.com/iam/docs/creating-managing-service-account-keys#iam-service-account-keys-create-console)
+
 

@@ -10,3 +10,18 @@ SimCLR models are also trained for 16 epochs from scratch using AdamW optimizer~
 
 ### Finetuning detail
 Each pretrained model is finetuned on the specific downstream task for 128 epochs while the learning rate is from {0.0001, 0.0003, 0.001, 0.003} as starting and applying a cosine-annealing learning rate schedule with 500 steps warm-up and batch size of 128. For each fine-tuning, we choose the best performing result on the test set among the performed grid search. We use the implementation from the [WiSE-FT GitHub repository](https://github.com/mlfoundations/wise-ft) for fine-tuning, where we have only one model and $\alpha=1$.
+
+
+### Install dependencies
+
+```bash
+conda env create
+conda activate DataDisributionTransferLearning
+```
+
+### Add directory to PYTHONPATH:
+
+```bash
+cd DataDisributionTransferLearning
+export PYTHONPATH="$PYTHONPATH:$PWD"
+```

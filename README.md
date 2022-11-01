@@ -36,4 +36,12 @@ Note: check if docker is already installed:
 sudo apt-get install -y nvidia-docker2
 If not continue:
 https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#docker
+4. sudo pkill -SIGHUP dockerd
+5. python3 -m pip install --user pipx
+6. python3 -m pipx ensurepath
+7. source ~/.bashrc (or re-login for the PATH changes to take effect)
+8. pipx install caliban
+> To check if all is well, run
+caliban --help
+
 
